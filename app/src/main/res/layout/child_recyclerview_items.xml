@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aap="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="3dp"
+    android:layout_height="wrap_content"
+    app:ignore="NamespaceTypo"
+    android:layout_marginLeft="16dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/hero_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            aap:riv_corner_radius="20dp"
+            aap:riv_border_color="#EEEEEE"
+            aap:riv_border_width="2.5dp"
+            android:elevation="2dp"
+            aap:riv_mutate_background="true"
+            android:src="@drawable/kdelogo"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MovieTitle"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:id="@+id/movie_name"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Movie Type"-->
+<!--        android:textColor="#C4DFEF"-->
+<!--        android:textSize="12sp"-->
+<!--        android:id="@+id/movie_type"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_gravity="left"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Rating"-->
+<!--        android:textColor="#C4DFEF"-->
+<!--        android:textSize="12sp"-->
+<!--        android:id="@+id/movie_rating"-->
+<!--        android:layout_marginTop="-15"-->
+<!--        android:layout_gravity="right"/>-->
+</LinearLayout>
+

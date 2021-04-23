@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLightDemo"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:tint= "@color/colorAccentDemo"
+        android:src="@drawable/ic_baseline_signal_wifi_off_24"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "Kindly Check your connection"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccentDemo"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRetry"
+        android:textAllCaps="true"
+        android:layout_margin="50dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:text="RETRY"
+        />
+
+</LinearLayout>

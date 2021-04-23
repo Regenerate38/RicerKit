@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aap="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_height="wrap_content"
+    app:ignore="NamespaceTypo"
+    android:layout_marginLeft="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/comment_userimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kdelogo" />
+
+        <LinearLayout
+            android:id="@+id/ll_app_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/comment_userimage"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_app_image"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:id="@+id/comment_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AeRegeneratel38"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/comment_uploadtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="7 days ago"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/comment_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is so bad that I would rather not use my mobile or any apps at all rather than using this fucking disgusting idiotic app."
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

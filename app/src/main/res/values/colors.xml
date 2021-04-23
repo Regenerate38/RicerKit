@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+//Demo Colors
+
+    <color name="colorOnPrimaryDemo">#fff</color>
+    <color name="colorPrimaryDemo">#554911</color>
+    <color name="colorPrimaryLightDemo">#EEE3AB</color>
+    <color name="colorAccentDemo">#665815</color>
+
+    <color name="colorPrimary">#1D99F3</color>
+    <color name="colorPrimaryDark">#1D88AA</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="colorGrey">#616161</color>
+    <color name="colorLightGrey">#757575</color>
+    <color name="colorVeryLightGrey">#E0E0E0</color>
+    <color name="colorGreyTransparent">#50000000</color>
+
+    <color name="colorPageGrey">#EEEEEE</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorRatingBackground">#f2f2f2</color>
+
+    <color name="colorProgressRating1">#57bb8a</color>
+    <color name="colorProgressRating2">#9ace6a</color>
+    <color name="colorProgressRating3">#ffeb3b</color>
+    <color name="colorProgressRating4">#ffbb50</color>
+    <color name="colorProgressRating5">#ff8a65</color>
+
+</resources>

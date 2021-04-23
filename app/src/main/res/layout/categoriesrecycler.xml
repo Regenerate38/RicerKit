@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aap="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_height="wrap_content"
+    app:ignore="NamespaceTypo"
+    android:layout_marginLeft="16dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/catSlideName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColor="#ffffff"
+        android:stateListAnimator="@null"
+        android:textSize="12sp"
+        android:text="Add to Library"
+        android:background="@drawable/button_style"/>
+</LinearLayout>

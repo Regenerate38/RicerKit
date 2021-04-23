@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".storexfce"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/xl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:mt_borderlessRippleEnabled="true"
+            app:mt_placeholder="Search XFCE Customizations"
+            app:mt_hint="Search XFCE Themes"
+            app:mt_placeholderColor="@color/black"
+            app:mt_maxSuggestionsCount="10"
+            android:id="@+id/searchBar"
+            app:mt_menuIconTint="@color/black"
+            app:mt_menuIconUseTint="true"
+            app:mt_dividerColor="@color/black"
+            app:mt_searchBarColor="#FFFEEF"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catcarousel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Parent_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#ffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ricer Kit"
+        android:textSize="28dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/favbtn"
+        android:text="Favorites"
+        android:textSize="22dp"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scrollbars="none">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/favbtn"
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+            </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            android:textSize="22dp"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="opencinnamomstore">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DD4814"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cinnamom"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/t1"
+                    android:visibility="invisible"
+                    android:text="Browse and Search \nCinnamon ustomizations"
+                    android:textColor="#ffff" />
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/cinnamom"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitEnd"
+                    android:tint="@color/white"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnstorekde"
+            android:clickable="true"
+            android:onClick="openKdestore"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1D99F3"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KDE"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Browse and Search \nKDE themes and customizations"
+                    android:layout_below="@id/t2"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#ffff"/>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:maxHeight="100dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/kdelogo"
+                    android:layout_alignParentRight="true"/>
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="120dp"-->
+<!--            app:cardCornerRadius="15dp"-->
+<!--            android:layout_marginTop="30dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#000000"-->
+<!--                android:padding="10dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/t3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Arch Linux"-->
+<!--                    android:textSize="26sp"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginLeft="10dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Browse and Search \nAUR Packages"-->
+<!--                    android:layout_below="@id/t3"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:textColor="#ffff"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:maxHeight="100dp"-->
+<!--                    android:src="@drawable/archlinux"-->
+<!--                    android:tint="#ffffff"-->
+<!--                    android:layout_alignParentRight="true"/>-->
+
+
+<!--            </RelativeLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="openxfcestore">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3bbe5b"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XFCE"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Browse and Search \nXFCE themes"
+                    android:layout_below="@id/t4"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="3dp"
+                    android:visibility="invisible"
+                    android:textColor="#ffff"/>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:maxHeight="100dp"
+                    android:scaleType="fitEnd"
+
+                    android:src="@drawable/xfce"
+                    android:tint="#ffffff"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:onClick="opengnomestore"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7e7e7e"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GNOME"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Browse and Search \nGNOME themes"
+                    android:layout_below="@id/t5"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#ffff"/>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:maxHeight="100dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/gnome"
+                    android:tint="#ffffff"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
