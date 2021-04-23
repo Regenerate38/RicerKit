@@ -2,7 +2,7 @@
 # ![logo](https://raw.githubusercontent.com/AERegeneratel38/RicerKit/master/app/src/main/res/mipmap-xhdpi/ic_launcher.png) Ricer Kit
 
 A free and open source android application for browsing KDE Store and other Linux Desktop Environment's Stores in Pling.
-Haven't got to check in different devices so there could be some bugs. Bug Report and Feedbacks are highly appreciated.
+Couldn't check it in different devices so there could be some bugs. Bug Report and Feedbacks are highly appreciated.
  
 
 
