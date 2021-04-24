@@ -14,7 +14,7 @@ Couldn't check it in different devices so there could be some bugs. Bug Report a
 
 ## Screenshots:
 <img src="0.jpg" width="25%"></img>
-<img src="1.jpg" width="25%"></img>
+<img src="5.jpg" width="25%"></img>
 <img src="2.jpg" width="25%"></img>
 <img src="3.jpg" width="25%"></img>
 <img src="4.jpg" width="25%"></img>
